@@ -1,0 +1,76 @@
+<!-- A header
+2-4 Buttons
+1 Input Field and submit button
+A list of previous guesses
+A fun design!
+A new Github Repository for the Guessing Game
+<!DOCTYPE html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+
+    <!-- Bootstrap and CSS here-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+      <div class="container" id='app'>
+
+        <div id='headers'>
+          <h1>Guessing Game</h1>
+          <h2 id="subtitle">Guess a number between 1-100</h2>
+        </div>
+
+        <div id='main'>
+          <div id='input-parent'>
+            <input id='playerInput' type="text" autofocus="autofocus" placeholder="#" maxlength="3">
+            <button type="button" class="btn btn-success" id='submit'type="submit">Submit</button>
+          </div>
+
+          <div id='guesses'>
+            <ul>
+                <li class="guess">-</li>
+                <li class="guess">2</li>
+                <li class="guess">3</li>
+                <li class="guess">4</li>
+                <li class="guess">5</li>
+            </ul>
+          </div>
+
+          <div id="menu-btns">
+            <!-- reset and hint buttons -->
+            <button type="button" class="btn btn-info" id="reset">Reset</button>
+            <button type="button" class="btn btn-info" id="hint">Hint</button>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div id='footer' class="center">
+      <div class='container'>
+        <div class="row-fluid">
+          <div id="fullstack" class='col-lg-4'>
+            <img src='fa-logo@2x.png'></img>
+          </div>
+            <div class='col-lg-4'>
+                    <h4>Project by Brian Deriel</h4>
+                  </div>
+        
+                  <div id="grace" class='col-lg-4'>
+                    <img src='grace_hopper_academy.png'></img>
+                </div>
+                  </div>
+
+         
+
+
+        </div>
+      </div>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
+
