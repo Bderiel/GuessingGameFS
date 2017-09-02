@@ -7,6 +7,16 @@ body {
     background-size: cover;
     background-color:rgba(256 ,256,256, 0.5);
     background-position: center;
+    font-family: 'Merriweather', serif;    
+}
+.win{
+    background-image: url(https://media.tenor.com/images/325618a76e48e56b9e43da8cff59d3a3/tenor.gif);
+}
+.lose{
+    background-image: url('loser.gif');
+}
+.endGame{
+    color: white;
 }
 #app{
     text-align: center;
