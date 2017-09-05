@@ -83,11 +83,13 @@ $(document).ready(function () {
         $(this).prop('disabled', true);
         $('body').addClass('win'); //add class remove class
         $('#hints').addClass('endGame');
+        $('#headers').hide();
         }
         if (game.pastGuesses.length === 5){
            $('body').addClass('lose');
            $(this).prop('disabled', true);
            $('#hints').addClass('endGame');
+           $('#headers').hide();
         }
 
     });
@@ -103,11 +105,12 @@ $(document).ready(function () {
         $('body').removeClass('win');
         $('body').removeClass('lose');
         $('#hints').removeClass('endGame');
+        $('#headers').show();
         // change backgroud to defalut
         //confirm
     });
     $('#hint').click(function () {
-        $('#headers').append(`<h1 id = 'threeHints'>${game.provideHint()}</h1>`);
+        $('#headers').append(`<div id = 'threeHints' ><h1>${game.provideHint()}</h1></div>`);
         $(this).prop('disabled', true);
     });
 });
